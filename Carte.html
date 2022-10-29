@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hitaka</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./assest/style/style.css">
 <script src="https://kit.fontawesome.com/da9e6ce9d6.js" crossorigin="anonymous"></script>
+<link rel="icon" href="./assest/img/Igo.png" type="image/icon type">
+
 </head>
 <body>
     <header>
         <nav>
-          <i class="fa-solid fa-bag-shopping" style="display: none;"></i>
+          <i class="fa-solid fa-bag-shopping" id="fa-bag-shopping"></i>
             <img src="./assest/img/LOGO.png" alt="LOGO" class="logo">
-            <ol>
-              <div class="x">
-                <i class="fa-solid fa-x" style="display: none;"></i>
+              <ol id="aah">
+              <div id="x">
+                <i class="fa-solid fa-x" id="fa-x"></i>
               </div>
                
                <li><a href="./index.html" class="a">Accueil</a></li>
@@ -27,39 +29,40 @@
                <li><a href="./Contact.html"><span class="oronge">Contact</span></a></li>
 
             </ol>
-            <i class="fa-solid fa-bars" style="display: none;"></i>
+            
+            <i class="fa-solid fa-bars" id="fa-bars" ></i>
         </nav>
     </header>
 
 <main class="PPP">
     
-    <select name="select" id="sel">
-      <option value="">select your category</option> 
-      <option value="">Salade</option>
-      <option value="">Plat</option>
-      <option value="">Obento</option>
+    <select name="select" id="sel" onchange="a()">
+      <option value="">tous</option> 
+      <option value="Salade">Salade</option>
+      <option value="Plat">Plat</option>
+      <option value="Obento">Obento</option>
   </select>
-    </center>
-<div class="container"></div>
+    <div id="salade">
+      <div class="container"></div>
     <div class="ster">
         <div class="prod1">
           <img src="./assest/img/Salad/Chirashi au saumon, avocat & concombre _ Audrey Cuisine (1).jfif" alt="Salade" class="produitS">
-          <p class="nameP">Chirashi au saumon, avocat & concombre </p>
-          <p class="namePG">Price : 5$</p>
+          <p class="nameP">Salade 1</p>
+          <p class="namePG">Price : <span id="salad1">5</span> $</p>
           <div class="fl">
             <p class="nameC">Category : Salade</p>
-            <div class="doronge" >
+            <div class="doronge" onclick="clickOne(5,'- Salade1   5$')">
               <i class="fa-sharp fa-solid fa-circle-plus"></i>
             </div>
            </div>
         </div>
         <div class="prod1">
             <img src="./assest/img/Salad/gil-ndjouwou-zFBQXhZ8mq4-unsplash.jpg" alt="Salade" class="produitS">
-            <p class="nameP">Chirashi au saumon, avocat & concombre </p>
-            <p class="namePG">Price : 5$</p>
+            <p class="nameP">Salade 2</p>
+            <p class="namePG">Price : <span id="salad2">3</span>$</p>
             <div class="fl">
               <p class="nameC">Category : Salade</p>
-              <div class="doronge">
+              <div class="doronge" id="2" onclick="clickOne(3,'- Salade2   3$')">
                 <i class="fa-sharp fa-solid fa-circle-plus"></i>
               </div>
              </div>
@@ -70,47 +73,49 @@
     <div class="ster">
         <div class="prod1">
           <img src="./assest/img/Salad/Salade à la vietnamienne.png" alt="Salade" class="produitS">
-          <p class="nameP">Chirashi au saumon, avocat & concombre </p>
-          <p class="namePG">Price : 5$</p>
+          <p class="nameP">Salade 3</p>
+          <p class="namePG">Price : <span id="salad3">15</span>$</p>
           <div class="fl">
             <p class="nameC">Category : Salade</p>
-            <div class="doronge">
+            <div class="doronge" id="3" onclick="clickOne(15,'- Salade3   15$')">
               <i class="fa-sharp fa-solid fa-circle-plus"></i>
             </div>
            </div>
         </div>
         <div class="prod1">
             <img src="./assest/img/Salad/Chirashi au saumon, avocat & concombre _ Audrey Cuisine.jfif" alt="Salade" class="produitS">
-            <p class="nameP">Chirashi au saumon, avocat & concombre </p>
-            <p class="namePG">Price : 5$</p>
+            <p class="nameP">Salade 4</p>
+            <p class="namePG">Price : <span id="salad4">2</span>$</p>
             <div class="fl">
               <p class="nameC">Category : Salade</p>
-              <div class="doronge">
+              <div class="doronge" id="4" onclick="clickOne(2,'- Salade4   2$')">
                 <i class="fa-sharp fa-solid fa-circle-plus"></i>
               </div>
              </div>
           </div>
     </div>
+    </div>
 
-    <div class="ster">
-        <div class="prod1">
+<div id="plats">
+  <div class="ster">
+        <div class="prod1" >
           <img src="./assest/img/plats/Le dashi _ le bouillon de base Japonais _ La cuisine Japonaise.png" alt="Salade" class="produitS">
-          <p class="nameP">Chirashi au saumon, avocat & concombre </p>
-          <p class="namePG">Price : 5$</p>
+          <p class="nameP">Plat 1</p>
+          <p class="namePG">Price : <span id="plat1">20</span>$</p>
           <div class="fl">
-            <p class="nameC">Category : Salade</p>
-            <div class="doronge">
+            <p class="nameC">Category : Plat</p>
+            <div class="doronge" onclick="clickOne(20,'- Plat1   20$')">
               <i class="fa-sharp fa-solid fa-circle-plus"></i>
             </div>
            </div>
         </div>
-        <div class="prod1">
+        <div class="prod1" >
             <img src="./assest/img/plats/Macaroni chinois végane.jfif" alt="Salade" class="produitS">
-            <p class="nameP">Chirashi au saumon, avocat & concombre </p>
-            <p class="namePG">Price : 5$</p>
+            <p class="nameP">Plat 2</p>
+            <p class="namePG">Price : <span id="plat2">28</span>$</p>
             <div class="fl">
-              <p class="nameC">Category : Salade</p>
-              <div class="doronge">
+              <p class="nameC">Category : Plat</p>
+              <div class="doronge" onclick="clickOne(28,'- Plat2   28$')">
                 <i class="fa-sharp fa-solid fa-circle-plus"></i>
               </div>
              </div>
@@ -120,22 +125,22 @@
     <div class="ster">
         <div class="prod1">
           <img src="./assest/img/plats/Petit sauté de poulet vite fait à la japonaise, parce que… j'ai faim papa ! et là j'm'en vais dans 3 minutes… Encore !__.jfif" alt="Salade" class="produitS">
-          <p class="nameP">Chirashi au saumon, avocat & concombre </p>
-          <p class="namePG">Price : 5$</p>
+          <p class="nameP">Plat 3</p>
+          <p class="namePG">Price : <span id="plat3">43</span>$</p>
           <div class="fl">
-            <p class="nameC">Category : Salade</p>
-            <div class="doronge">
+            <p class="nameC">Category : Plat</p>
+            <div class="doronge" onclick="clickOne(43,'- Plat3   43$')">
               <i class="fa-sharp fa-solid fa-circle-plus"></i>
             </div>
            </div>
         </div>
         <div class="prod1">
             <img src="./assest/img/plats/pexels-diego-pontes-2323391.jpg" alt="Salade" class="produitS">
-            <p class="nameP">Chirashi au saumon, avocat & concombre </p>
-            <p class="namePG">Price : 5$</p>
+            <p class="nameP">Plat 4</p>
+            <p class="namePG">Price : <span id="plat4">33</span>$</p>
             <div class="fl">
-              <p class="nameC">Category : Salade</p>
-              <div class="doronge">
+              <p class="nameC">Category : Plat</p>
+              <div class="doronge" onclick="clickOne(33,'- Plat4   33$')">
                 <i class="fa-sharp fa-solid fa-circle-plus"></i>
               </div>
              </div>
@@ -144,46 +149,49 @@
     <div class="ster">
       <div class="prod1">
         <img src="./assest/img/plats/pexels-gustavo-santana-5860653.jpg" alt="Salade" class="produitS">
-        <p class="nameP">Chirashi au saumon, avocat & concombre </p>
-        <p class="namePG">Price : 5$</p>
+        <p class="nameP">Plat 5</p>
+        <p class="namePG">Price : <span id="plat5">23</span>$</p>
         <div class="fl">
-          <p class="nameC">Category : Salade</p>
-          <div class="doronge">
+          <p class="nameC">Category : Plat</p>
+          <div class="doronge" onclick="clickOne(23,'- Plat5   23$')">
             <i class="fa-sharp fa-solid fa-circle-plus"></i>
           </div>
          </div>
       </div>
       <div class="prod1">
           <img src="./assest/img/plats/Poulet à la  sauce aigre-douce (Chine).jfif" alt="Salade" class="produitS">
-          <p class="nameP">Chirashi au saumon, avocat & concombre </p>
-          <p class="namePG">Price : 5$</p>
+          <p class="nameP">Plat 6</p>
+          <p class="namePG">Price : <span id="plat6">10</span>$</p>
           <div class="fl">
-            <p class="nameC">Category : Salade</p>
-            <div class="doronge">
+            <p class="nameC">Category : Plat</p>
+            <div class="doronge" onclick="clickOne(10,'- Plat6   10$')">
               <i class="fa-sharp fa-solid fa-circle-plus"></i>
             </div>
            </div>
         </div>
   </div>
+</div>
+    
+<div id="obento">
   <div class="ster">
     <div class="prod1">
       <img src="./assest/img/obento/Obento Art.png" alt="Salade" class="produitS">
-      <p class="nameP">Chirashi au saumon, avocat & concombre </p>
-      <p class="namePG">Price : 5$</p>
+      <p class="nameP">Obento 1</p>
+      <p class="namePG">Price : <span id="obento1">5</span>$</p>
       <div class="fl">
-        <p class="nameC">Category : Salade</p>
-        <div class="doronge">
+        <p class="nameC">Category : Obento</p>
+        <div class="doronge" onclick="clickOne(5,'- Obento1   5$')">
           <i class="fa-sharp fa-solid fa-circle-plus"></i>
         </div>
        </div>
     </div>
     <div class="prod1">
         <img src="./assest/img/obento/Obento Art_ Photo (1).png" alt="Salade" class="produitS">
-        <p class="nameP">Chirashi au saumon, avocat & concombre </p>
-        <p class="namePG">Price : 5$</p>
+        <p class="nameP">Obento 2</p>
+        <p class="namePG">Price : <span id="obento2">52</span>$</p>
         <div class="fl">
-          <p class="nameC">Category : Salade</p>
-          <div class="doronge">
+          <p class="nameC">Category : Obento</p>
+          <div class="doronge" onclick="clickOne(52,'- Obento2   52$')">
             <i class="fa-sharp fa-solid fa-circle-plus"></i>
           </div>
          </div>
@@ -192,22 +200,22 @@
 <div class="ster">
   <div class="prod1">
     <img src="./assest/img/obento/Obento Art_ Photo (2).png" alt="Salade" class="produitS">
-    <p class="nameP">Chirashi au saumon, avocat & concombre </p>
-    <p class="namePG">Price : 5$</p>
+    <p class="nameP">Obento 3</p>
+    <p class="namePG">Price : <span id="obento3">25</span>$</p>
     <div class="fl">
-      <p class="nameC">Category : Salade</p>
-      <div class="doronge">
+      <p class="nameC">Category : Obento</p>
+      <div class="doronge" onclick="clickOne(25,'- Obento3   25$')">
         <i class="fa-sharp fa-solid fa-circle-plus"></i>
       </div>
      </div>
   </div>
   <div class="prod1">
       <img src="./assest/img/obento/Obento Art_ Photo (3).png" alt="Salade" class="produitS">
-      <p class="nameP">Chirashi au saumon, avocat & concombre </p>
-      <p class="namePG">Price : 5$</p>
+      <p class="nameP">Obento 4</p>
+      <p class="namePG">Price : <span id="obento4">13</span>$</p>
       <div class="fl">
-        <p class="nameC">Category : Salade</p>
-        <div class="doronge">
+        <p class="nameC">Category : Obento</p>
+        <div class="doronge" onclick="clickOne(13,'- Obento4   13$')">
           <i class="fa-sharp fa-solid fa-circle-plus"></i>
         </div>
        </div>
@@ -216,39 +224,63 @@
 <div class="ster">
   <div class="prod1">
     <img src="./assest/img/obento/Obento Art_ Photo (4).png" alt="Salade" class="produitS">
-    <p class="nameP">Chirashi au saumon, avocat & concombre </p>
-    <p class="namePG">Price : 5$</p>
+    <p class="nameP">Obento 5</p>
+    <p class="namePG">Price : <span id="obento5">30</span>$</p>
     <div class="fl">
-      <p class="nameC">Category : Salade</p>
-      <div class="doronge">
+      <p class="nameC">Category : Obento</p>
+      <div class="doronge" onclick="clickOne(30,'- Obento5   30$')">
         <i class="fa-sharp fa-solid fa-circle-plus"></i>
       </div>
      </div>
   </div>
   <div class="prod1">
       <img src="./assest/img/obento/Obento Art_ Photo (5).png" alt="Salade" class="produitS">
-      <p class="nameP">Chirashi au saumon, avocat & concombre </p>
-      <p class="namePG">Price : 5$</p>
+      <p class="nameP">Obento 6</p>
+      <p class="namePG">Price : <span id="obento6">90</span>$</p>
       <div class="fl">
-        <p class="nameC">Category : Salade</p>
-        <div class="doronge">
+        <p class="nameC">Category : Obento</p>
+        <div class="doronge" onclick="clickOne(90,'- Obento6 90$')">
           <i class="fa-sharp fa-solid fa-circle-plus"></i>
         </div>
        </div>
     </div>
 </div>
     </div>
-
-    <div class="carte">
-        <h4><i class="fa-regular fa-credit-card"></i>&ensp;Carte</h4>
-        <p class="not">Not Found</p>
-        <p class="confirm"><i class="fa-sharp fa-solid fa-sack-dollar"></i>&ensp; Confirm</p>
-        <p class="Total">Total Price  : <span class="Tprice">0</span>$</p>
-    
+</div>
+  
+<div id="crta">
+  <div class="carte">
+        <h4><div id="x">
+          <i class="fa-solid fa-x" id="xa-x"></i>
+        </div><i class="fa-regular fa-credit-card"></i>&ensp;Carte</h4>
+        <div id="cont">
+          
+        </div>
+        <p id="not">Not Found</p>
+        <p class="confirm" onclick="Totale()"><i class="fa-sharp fa-solid fa-sack-dollar"></i>&ensp; Confirm</p>
+        <p class="Total">Total Price  : <span id="Tprice">0</span>$</p>
+     
     </div>
+</div>
+    
 </main>
-<footer>
-        
+<footer id="footer"  class="footer">
+  <div class="container">
+    <div class="fcopy text-center">
+      <div class="footer-social">
+        <a href="#"><i class="fa fa-facebook"></i></a>	
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-pinterest"></i></a>
+        <a href="#"><i class="fa fa-behance"></i></a>	
+      </div>
+      <p>
+        &copy;copyright. designed and developed by Mohcine Khribech</a>
+      </p>
+    </div>
+  </div>
+  
 </footer>
 </body>
 </html>
+<script src="./assest/Hitaka.js"></script>

@@ -13,6 +13,7 @@
 body{
     background-color: #1A1A1A;
     width: 100%;
+    transition: all .3s;
 }
 .hd{
     background-image: url(../img/background.jpg);
@@ -54,6 +55,7 @@ nav{
 .a:hover{
     color: #FF7A00;
     border-bottom: 2px solid #FF7A00;
+    transition: all .3s;
 }
 .oronge{
     color: #FF7A00;
@@ -64,6 +66,7 @@ nav{
 .oronge:hover{
     color: white;
     background-color: #FF7A00;
+    transition: all .3s;
 }
 h1{
     color: white;
@@ -255,7 +258,7 @@ select{
 }
 .carte{
     width: 308px;
-    height: 400px;
+    height: fit-content;
     background-color: #2F2217;
     border-radius: 15px;
     margin-left: 60%;
@@ -272,11 +275,12 @@ h4{
     border-radius: 15px 15px 0 0;
     text-align: center;
 }
-.not{
+#not{
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-    margin-top: 50%;
+    margin-top: 30%;
+    margin-bottom: 20%;
     color: rgba(255, 255, 255, 0.38);
     text-align: center;
 }
@@ -290,7 +294,7 @@ h4{
     width: max-content;
     border-radius: 15px;
     margin-left: 100px;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 .Total,.Tprice{
     color: white;
@@ -330,10 +334,50 @@ h4{
     color: white;
     font-size: 19px;
 }
-.fa-x,.fa-bars,.fa-bag-shopping{
-    display: none;
+#fa-x,#fa-bars,#fa-bag-shopping,#xa-x{
+        display: none;
+        cursor:pointer;
+    }
+#cont p{
+    color: white;
+    font-size: 16px;
+    margin-top: 4px;
+    word-spacing: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+footer{
+    height: 100px;
 }
 
+.footer {
+    background: #1A1A1A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    height: 154px;
+}
+.fcopy p,.fcopy p a {
+    color: #a5adb3;
+    font-size: 14px;
+    font-weight: 400;
+}
+.footer-social a i {
+    color: #a4aaaf;
+    margin: 0 18px 24px 0;
+    transition: .3s;
+}
+.footer-social{
+    display: flex;
+    justify-content: center;
+}
+.footer-social i:hover{
+    color: #FF7A00;
+}
+.confirm{
+    cursor: pointer;
+}
 @media (max-width:1100px) {
     .ster{
         flex-direction: column;
@@ -363,19 +407,33 @@ h4{
         text-align: center;
         margin: 0;
     }
+    .fff{
+        font-size: 12px;
+    }
 }
 @media (max-width:864px) {
-    .fa-x,.fa-bars,.fa-bag-shopping{
+    #fa-x,#fa-bars,#fa-bag-shopping,#xa-x{
         display: block;
+        color: #FF7A00;
     }
-    ol{
+    /* ol{
         display: none;
+    } */
+    #crta{
+        width: 100vw;
+        display:none;
+        position: absolute;
+        right: 0;
+        top: 90px;
     }
     .ster{
         flex-direction: row;
     }
     .carte{
-        display: none;
+        margin-left: -5px;
+        position: sticky;
+        margin: 0 auto;
+        top: 90px;
     }
     select{
         margin-left: 40%;
@@ -384,12 +442,16 @@ h4{
     ol{
         flex-direction: column;
         background-color: #2F2217;
-        margin-top: 10%;
+        margin-right: 80%;
+        margin-top: 250px;
+        display: none;
         width: 160px;
         height: 210px;
         padding-top: 7px;
         position: absolute;
-        margin-right: 75%;
+        float: left;
+
+        
     }
     li{
         font-size: 16px;
@@ -403,7 +465,7 @@ h4{
     .logo{
         justify-content: center;
     }
-    .x{
+    #x{
         display: flex;
         color: #FF7A00;
         font-size: 20px;
@@ -423,9 +485,8 @@ h4{
 }
 @media (max-width:772px) {
     .ster{
-        margin-left: 10%;
-        margin-right: 20%;
-        flex-direction: column;
+        margin-left: 5%;
+        margin-right: 5%;
         justify-content: center;
     }
     .container{
@@ -466,5 +527,13 @@ h4{
     }
     .un{
         width: 280px;
+    }
+}
+@media (max-width:630px) {
+    .ster{
+       flex-direction: column;
+       margin-left: 15%;
+       margin-right: 15%;
+
     }
 }
