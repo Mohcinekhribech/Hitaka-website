@@ -532,8 +532,6 @@ footer{
 @media (max-width:630px) {
     .ster{
        flex-direction: column;
-       margin-left: 15%;
-       margin-right: 15%;
 
     }
 }
