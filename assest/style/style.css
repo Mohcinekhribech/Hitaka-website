@@ -533,5 +533,7 @@ footer{
     .ster{
        flex-direction: column;
        align-items: center;
+       margin-left: 0;
+       margin-right: 0;
     }
 }
