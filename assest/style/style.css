@@ -310,8 +310,7 @@ h4{
     padding: 25px 13px;
     border-radius: 0 0 15px 15px;
 }
-.Tprice{
-    margin-left: 30%;
+#Tprice{
     cursor: pointer;
 }
 .agreen{
