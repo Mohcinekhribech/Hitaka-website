@@ -405,6 +405,27 @@ footer{
     display: flex;
     justify-content: flex-end;
 }
+#xmcn{
+    color: #FF7A00;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+#mcn{
+    background-color: black;
+    color: white;
+    width: max-content;
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 20px;
+    opacity: 95%;
+    left: 0;
+    margin-top: 10%;
+    display: none;
+    position: absolute;
+}
+
 .fa-recycle{
     color: #FF7A00;
     font-size: 20px;
@@ -453,9 +474,12 @@ footer{
     }
     #valider{
         position: absolute;
-        top: 0;
         margin-left: 10%;
         top: 90px;
+    }
+    #mcn{
+        position: absolute;
+        top: 100px;
     }
 }
 @media (max-width:864px) {
@@ -491,6 +515,12 @@ footer{
         top: 20px;
         font-size: 15px;
         margin-left: 28%;
+    }
+    #mcn{
+        position: absolute;
+        top: 20px;
+        font-size: 15px;
+
     }
     .ster{
         flex-direction: row;

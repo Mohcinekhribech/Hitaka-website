@@ -30,16 +30,24 @@
               </ol>
               
               <i class="fa-solid fa-bars" id="fa-bars" ></i>
-          </nav>
-
+            </nav>
+            <div id="mcn">
+            <div id="xmcn" onclick="f()">
+              <i class="fa-solid fa-x" id="ab-c" style="cursor: pointer;"></i>
+            </div>
+            <p class="mmcn">Votre Message a envyer avec succes <i class="fa-solid fa-check"></i></p>
+          </div>
+          
+          
     </header>
     <main>
     <center><h2>Contact</h2></center>
-    <form action="submit">
+    <form>
         <label for="Name"><span></span><input type="name" class="un" placeholder="   Name"></label>
         <label for="emai"><span></span><input type="email" class="un" placeholder="   Email"></label>
+        <label for="Phone"><span></span><input type="text" class="un" placeholder="   Phone"></label>
         <label for="Name"><span></span><input type="text" placeholder="   Your Message" class="un"></label>
-        <center><input type="submit" value="Envoyer" class="btnen"></center>
+        <center><input type="button" value="Envoyer" class="btnen" id="btnbtn" style="cursor: pointer;" onclick="msg()"></div></center>
     </form>
     <div id="crta" style="display: none;">
         <div class="carte">
