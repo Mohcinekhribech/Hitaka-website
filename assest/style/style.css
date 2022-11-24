@@ -69,23 +69,23 @@ nav{
 }
 h1{
     color: white;
-    margin-left: 20%;
-    margin-left: 20%;
     font-style: normal;
+    margin-top: 65px;
+    text-align: center;
 font-weight: 600;
 font-size: 46px;
 line-height: 69px;
-margin-top: 70px;
+
 }
 .phome{
     color: white;
     font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 24px;
     text-align: center;
     margin-left:5%;
     margin-right: 5%;
+    line-height: 30px;
     margin-top: 294px;
 }
 .green{
@@ -93,11 +93,12 @@ margin-top: 70px;
 }
 .Homepic{
     width: 336px;
+    margin-left: 15%;
 }
 .Homeparag{
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 600;
+    margin: 30px 10%;
     font-size: 16px;
     line-height: 24px;
     color: white;
@@ -590,18 +591,24 @@ footer{
         justify-content: center;
     }
     .phome,.Homeparag{
-        font-size: 10px;
+        font-size: 16px;
     }
     h1{
-        font-size: 24px;
+        font-size: 27px;
+    }
+    .Homeparag{
+      margin: 20px 5%;
+      text-align: center;
     }
     .MHome{
+        flex-direction: column;
         align-items: center;
     }
     .Homepic{
         place-content: center;
         height: 364px;
         width: 243px;
+        margin: 0;
     }
     .part1,.part2{
         flex-direction: column;
@@ -641,7 +648,7 @@ footer{
        margin-right: 0;
     }
     .Homeparag{
-        font-size: 8px;
+        font-size: 17px;
     }
     .phome{
         margin-top: 200px;
